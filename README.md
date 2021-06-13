@@ -8,7 +8,7 @@ Multimail App can also be used in email marketing in which the user want to send
 Let’s say you run a small business that needs to send PDF invoices to your customers once a month. Your billing software generates the PDF invoices, one for each of your 100 customers. Now you need to send the right invoice to the right customer. Until now, you’d have to prepare multiple emails manually composing and sending 100 individual emails, and having to attach the right PDF to each email. But now, you can automate all of this using the MultiMail .
 
 
-#Modules of the software:
+# Modules of the software:
 •	Email id,password : A user has to provide his gmail id and password for login which will be encrypted by MIME.
 •	Subject           : Here we have a Common subject for all the emails.
 •	Body              : Here the users can put the body content for the email which is fetched by Notebpad.(variable fields should be written inside curly braces E.g {name} ).
@@ -17,7 +17,7 @@ Let’s say you run a small business that needs to send PDF invoices to your cus
                       automatically generate multiple perosonalized attachments in Document folder which is included in the project folder.)
 •	Send mail         : By clicking send button the email will be sent.
 
-#Design Details :
+# Design Details :
 The project is totally based on python and doesn’t require a database. In terms of storage it just requires a memory to store the attachments created during the process.
 
 	Requirements:
