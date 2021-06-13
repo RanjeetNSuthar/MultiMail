@@ -9,18 +9,18 @@ Let’s say you run a small business that needs to send PDF invoices to your cus
 
 
 # Modules of the software:
-•	Email id,password : A user has to provide his gmail id and password for login which will be encrypted by MIME.
-•	Subject           : Here we have a Common subject for all the emails.
-•	Body              : Here the users can put the body content for the email which is fetched by Notebpad.(variable fields should be written inside curly braces E.g {name} ).
-•	Attachments       : In this the user can create new attachments in MS Word or add existing attachment just by providing the respective paths in the spread sheet.
+•	Email id,password : A user has to provide his gmail id and password for login which will be encrypted by MIME. <br />
+•	Subject           : Here we have a Common subject for all the emails. <br />
+•	Body              : Here the users can put the body content for the email which is fetched by Notebpad.(variable fields should be written inside curly braces E.g {name} ). <br /> 
+•	Attachments       : In this the user can create new attachments in MS Word or add existing attachment just by providing the respective paths in the spread sheet.  
                       (In case of new attachments user only needs to modify one word file by mentioning variable fields inside curly braces in Italic font and the System will 
-                      automatically generate multiple perosonalized attachments in Document folder which is included in the project folder.)
-•	Send mail         : By clicking send button the email will be sent.
+                      automatically generate multiple perosonalized attachments in Document folder which is included in the project folder.) <br />
+•	Send mail         : By clicking send button the email will be sent. <br />
 
 # Design Details :
 The project is totally based on python and doesn’t require a database. In terms of storage it just requires a memory to store the attachments created during the process.
 
-	Requirements:
+	Requirements: <br />
 •	Python 
 •	MS Word
 •	MS Excel
@@ -31,18 +31,18 @@ The project is totally based on python and doesn’t require a database. In term
 •	Template.docx              : This is a template in form of Word file where user 
                                Can make changes and thus create the layout of the 
                                Attachments which will be customized by the 
-                               Application according to the recipients details.
+                               Application according to the recipients details. <br />
 
 •	Book1.xlsx                 : This is the spread sheet where user can fill the cells 
                                With the values which needs to be changed in the 
-                               Template attachment.
+                               Template attachment. <br />
 
 •	body.txt                   : This is a txt file where user can type the body of the
-                               Email.
+                               Email. <br />
 
 •	email&attachment_list.xlsx : This is the spread sheet where user will
                                fill the recipients email id and the respective 
-                               Attachment paths.
+                               Attachment paths. <br />
 
 
 The Gmail SMTP settings do have a sending limit, which is in place to prevent spamming. You can only send a total of 500 emails per day
