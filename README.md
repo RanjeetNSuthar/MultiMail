@@ -51,6 +51,9 @@ The project is totally based on python and doesn’t require a database. In term
 
 The Gmail SMTP settings do have a sending limit, which is in place to prevent spamming. You can only send a total of 500 emails per day
 
+# Execution
+Run the run_multimail.py
+
 
 ![image](https://user-images.githubusercontent.com/76241195/121818006-3de33200-cca2-11eb-9d72-b22df0c21b81.png)
 
