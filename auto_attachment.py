@@ -124,11 +124,11 @@ class runing_files:
         doc = Document(filename)
         print("inside create resource")
         print("inside playword")
-        wb = openpyxl.load_workbook('../miniproject/Book1.xlsx')             #first run this and then
-        sh1 = wb['Record1']                                                  #comment these
+        wb = openpyxl.load_workbook('../miniproject/Book1.xlsx')            
+        sh1 = wb['Record1']                                                  
         print("before creating heading")
-        sh1 = Creating_record_file(doc,sh1).Creating_record_headings()       #lines
-        wb.save('../miniproject/Book1.xlsx')                                                #this also
+        sh1 = Creating_record_file(doc,sh1).Creating_record_headings()       
+        wb.save('../miniproject/Book1.xlsx')                                               
 
 
     def create_personalized_attachments(self):
@@ -136,8 +136,8 @@ class runing_files:
         doc = Document(filename)
         print("inside personalize")
         wbnew = openpyxl.load_workbook('../miniproject/Book1.xlsx')
-        sh2 = wbnew['Record1']                                             #remove this comment and after commenting above
-        replacement(sh2,doc).creating_dictionary()                         #lines
+        sh2 = wbnew['Record1']                                            
+        replacement(sh2,doc).creating_dictionary()                         
         print("after replacement")
         replacement.updating_attachment_list(attachment_list)
 
